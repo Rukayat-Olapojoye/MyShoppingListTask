@@ -1,0 +1,94 @@
+:root {
+    --my-gray-color: #e3e3e3;
+    --my-green-color: #62b888;
+  }
+
+  /*Styling my div elements*/
+
+  .div-style {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-color: solid var(--my-green-color);
+    border:5px; */
+  }
+  
+  /*Styling the body*/
+  
+  body {
+    color: #f5f3f3;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', cursive;
+  }
+
+  .green {
+    color: var(--my-green-color);
+  }
+
+/*Styling the form element*/
+  form {
+    display: grid;
+    max-width: 500px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 20px;
+    border: 2px solid var(--my-gray-color);
+    border-radius: 8px;
+  }
+  
+
+  input {
+    padding: 15px 25px;
+    font-size: inherit;
+    font-family: inherit;
+    border: 2px solid var(--my-gray-color);
+    border-radius: 8px;
+  }
+
+
+#addItem{
+  grid-column: span 2;
+  align-self: center;
+  justify-self: center;
+  padding: 10px 25px;
+  font-size: inherit;
+  font-family: inherit;
+  border: 0; 
+  border-radius: 8px;
+  background-color: var(--my-green-color)
+}
+
+#description-field{
+  grid-column: span 2;
+  height:80px;
+}
+
+#listing-div{
+    display:inline-block;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid var(--my-gray-color);
+    border-radius: 8px;
+  
+  }
+
+  #listing-div ul{
+    display: flex;
+    flex-direction:column;
+    align-content:space-between;
+    color: black;
+  }
